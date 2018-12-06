@@ -44,6 +44,7 @@ USERNAME=(${1})
 echo "Username of the new account would be  ${USERNAME}"
 
 # Print the home directory name (comment) if entered by the user
+# Another way for getting the comment is to first run "shift " then "FULLNAME="S{@}""
 if [[ "${#}" -eq 2 ]]
   then
     FULLNAME=$(echo "${2}")
